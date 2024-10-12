@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import sqlPool from "../dbConnect";
+import sqlPool from "../dbConnect.js";
 
 const Application = sqlPool.define("Application", {
   applicationID: {
@@ -11,7 +11,7 @@ const Application = sqlPool.define("Application", {
     type: DataTypes.STRING,
     allowNull: false,
     references: {
-      model: "User",
+      model: "Users",
       key: "email",
     },
     onDelete: "CASCADE",
@@ -26,7 +26,7 @@ const Application = sqlPool.define("Application", {
     type: DataTypes.INTEGER,
     allowNull: false,
     references: {
-      model: "Job",
+      model: "Jobs",
       key: "jobID",
     },
     onDelete: "CASCADE",

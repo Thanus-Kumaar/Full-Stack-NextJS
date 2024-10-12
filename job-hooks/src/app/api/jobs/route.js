@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
+import { Job } from "@/app/utils/database/associations.js";
 
 export async function GET(req) {
-  return NextResponse.json({ MSG: "Hello from server" }, { status: 200 });
+  const jobs = Job.findAll();
+  return NextResponse.json({ jobs }, { status: 200 });
 }

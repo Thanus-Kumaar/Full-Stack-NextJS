@@ -29,8 +29,10 @@ export default function Home() {
         </Carousel>
       </div>
       <div className="flex flex-row justify-center mt-20 gap-10">
-          <MainBottom />
-          <button className="bg-blue-500 p-4 rounded-md font-semibold hover:scale-[102%] transition duration-150">Become a user now, get a free suggestion from our job picker</button>
+        <MainBottom />
+        <button className="bg-blue-500 p-4 rounded-md font-semibold hover:scale-[102%] transition duration-150">
+          Become a user now, get a free suggestion from our job picker
+        </button>
       </div>
     </div>
   );

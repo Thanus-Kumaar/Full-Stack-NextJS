@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import sqlPool from "../dbConnect";
+import sqlPool from "../dbConnect.js";
 
 const Company = sqlPool.define("Company", {
   companyID: {
